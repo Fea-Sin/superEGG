@@ -42,12 +42,11 @@ roadhog 默认使用 [CSS Modules](https://github.com/css-modules/css-modules) �
 
 // component
 import style from './style.css'
-<div className={style.hello}>HELLO WORLD</div>
+<div className={style.className}>HELLO WORLD</div>
 ```
 
 错误写法：
 ```js
-
 // component
 import './style.css'
 <div className="className">HELLO WORLD</div>
