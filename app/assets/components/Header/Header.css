@@ -1,0 +1,57 @@
+.HeadHeader {
+  height: 80px;
+  border-bottom: 1px solid #d4dadf;
+  overflow: hidden;
+}
+.HeadHeader .HeaderBox {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.HeadHeader .HeaderBox .Nav {
+  float: left;
+  width: 70%;
+}
+.HeadHeader .HeaderBox .Nav ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+.HeadHeader .HeaderBox .Nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+.HeadHeader .HeaderBox .Nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 0 10px;
+  color: #545454;
+}
+.HeadHeader .HeaderBox .Nav li a:hover {
+  border-bottom: 1px solid blueviolet;
+}
+.HeadHeader .HeaderBox .Logo {
+  float: left;
+  width: 30%;
+}
+.HeadHeader .HeaderBox .Logo .box {
+  width: 79px;
+  height: 79px;
+  animation: App-logo-spin infinite 20s linear;
+}
+.HeadHeader .HeaderBox .Logo img {
+  width: 100%;
+  height: 100%;
+}
+.HeadHeader .HeaderBox .NavActive {
+  color: blueviolet !important;
+  border-bottom: 1px solid blueviolet;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}

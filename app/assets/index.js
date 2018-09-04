@@ -1,19 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Hello from './components/Hello'
+import dva from 'dva'
 
 import './index.css'
 
-const App = () => {
-  return (
-    <div>
-      <div style={{ color: 'red' }}>INDEX HOME</div>
-      <Hello />
-    </div>
-  )
-}
+// 1. Initialize
+const app = dva({
+  // 初始化数据
+})
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-)
+// 2. Plugins
+// app.use({})
+
+// 3. Model
+// app.model()
+
+// 4. Router
+app.router(require('./router').default)
+
+// 5. Start
+app.start('#root')
