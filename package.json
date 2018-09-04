@@ -1,0 +1,55 @@
+{
+  "name": "super-egg",
+  "version": "1.0.0",
+  "description": "a egg full stack project",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "dependencies": {
+    "antd": "^3.3.0",
+    "dva": "^2.1.0",
+    "dva-loading": "^1.0.4",
+    "egg": "^2.4.1",
+    "egg-scripts": "^2.5.1",
+    "egg-view-assets": "^1.0.0",
+    "egg-view-nunjucks": "^2.1.6",
+    "history": "^4.7.2",
+    "query-string": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.4.2"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --env prod",
+    "stop": "egg-scripts stop",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "build": "cross-env SET_PUBLIC_PATH=true roadhog build",
+    "test": "egg-bin test",
+    "autod": "autod",
+    "git-a": "node git-back/git-a.js",
+    "git-b": "node git-back/git-b.js"    
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "babel-plugin-dva-hmr": "^0.4.0",
+    "babel-plugin-import": "^1.1.0",
+    "cross-env": "^5.2.0",
+    "egg-bin": "^4.3.7",
+    "egg-mock": "^3.15.0",
+    "redbox-react": "^1.5.0",
+    "roadhog": "^2.3.0",
+    "shell-task": "^1.0.0"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "egg",
+    "full stack"
+  ],
+  "ci": {
+    "version": "8"
+  },
+  "author": "feasin",
+  "license": "MIT"
+}
